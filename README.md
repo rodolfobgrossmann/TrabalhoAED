@@ -7,7 +7,7 @@
 
 Tendo esses parâmetros, o código foi testado nos seguintes cenários: 
   vetor = [1,0,0,0,1] e n = 1
-  vetor = [1,0,0,0,1] e n = 2
-  vetor = [1]         e n = 1
+    vetor = [1,0,0,0,1] e n = 2
+      vetor = [1]         e n = 1
 
 o código funcionou em todos os testes, incluindo os do LeetCode.
