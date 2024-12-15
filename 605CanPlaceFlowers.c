@@ -20,7 +20,7 @@ bool canPlaceFlowers(int* flowerbed, int flowerbedSize, int n) {
             }else if ( (i == 0) && ( ( vetor[i] + vetor[i+1] ) == 0) ){ 
                 vetor[i] = 1;   
                 contaflor++;                                                 
-            }else if ( i == ( flowerbedSize - 1) && ( vetor[i] + vetor[i-1] ) == 0 {
+            }else if ( i == ( flowerbedSize - 1) && ( vetor[i] + vetor[i-1] ) == 0 ) {
                 vetor[i] = 1;
                 contaflor++;                                                    
             }
