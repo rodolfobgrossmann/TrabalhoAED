@@ -1,0 +1,57 @@
+Dr. Memory version 2.6.0 build 0 built on Sep 21 2023 17:38:58
+Windows version: WinVer=105;Rel=1909;Build=18363;Edition=Professional
+Dr. Memory results for pid 13548: "a.exe"
+Application cmdline: ""C:\Users\User\Desktop\Nova pasta\a.exe""
+Recorded 124 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin64\suppress-default.txt
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000a3c9fffb20-0x000000a3c9fffb28 8 byte(s)
+# 0 ___chkstk_ms
+# 1 _pei386_runtime_relocator
+# 2 __tmainCRTStartup
+# 3 .l_start
+# 4 KERNEL32.dll!BaseThreadInitThunk
+Note: @0:00:00.810 in thread 14624
+Note: 0x000000a3c9fffb20 refers to 696 byte(s) beyond the top of the stack 0x000000a3c9fffdd8
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #2: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000a3c9fffd80-0x000000a3c9fffd88 8 byte(s)
+# 0 ___chkstk_ms
+# 1 canPlaceFlowers
+# 2 main 
+Note: @0:00:00.849 in thread 14624
+Note: 0x000000a3c9fffd80 refers to 8 byte(s) beyond the top of the stack 0x000000a3c9fffd88
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #3: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000a3c9fffd80-0x000000a3c9fffd88 8 byte(s)
+# 0 ___chkstk_ms
+# 1 canPlaceFlowers
+# 2 main 
+Note: @0:00:00.889 in thread 14624
+Note: 0x000000a3c9fffd80 refers to 8 byte(s) beyond the top of the stack 0x000000a3c9fffd88
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      2
+	Error #   2:      2
+	Error #   3:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      3 unique,     6 total unaddressable access(es)
+      0 unique,     0 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      1 potential leak(s) (suspected false positives)
+         (details: C:\Users\User\AppData\Roaming\Dr. Memory\DrMemory-a.exe.13548.000\potential_errors.txt)
+     16 unique,    20 total,  10604 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\User\AppData\Roaming\Dr. Memory\DrMemory-a.exe.13548.000\results.txt
